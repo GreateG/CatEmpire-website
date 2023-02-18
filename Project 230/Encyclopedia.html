@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+body{
+	background-color: black;
+	background-image: url(whatcat.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Header/Website Title */
+.header {
+  font-family: Algerian;
+  padding: 35px;
+  text-align: left;
+  background: white;
+  background: rgba(255,255,255,0.5);
+}
+
+.header img{
+
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin-right: 20px;
+}
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 2px;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Algeria;
+  font-size: 18px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 80%;
+}
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  background-color: white;
+  opacity: 0.8;
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  opacity: 0.6;
+  margin-top: 20px;
+}  
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="Logopowjpeg.jpeg" alt="Logo">
+  <h1>Cat Empire</h1>
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CAT LOVERS COMMUNITY</h4>
+</div>
+
+
+
+<div class="topnav">
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/Home.html"target="_blank">Home</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/About.html" target="_blank">About</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/Showroom.html" target="_blank">Showroom</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/Gallery.html"target="_blank">Gallery</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/Encyclopedia.html" target="_blank">Encyclopedia</a>
+  <a href= "file:///D:/XAMPP/htdocs/Project%20230/Blogs.html" target="_blank">Blogs</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/ContactUs.html" target="_blank">Contact Us</a>
+  <a href="file:///D:/XAMPP/htdocs/Project%20230/logIn-SignUp.html" style="float:right">Login/Sing Up</a>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>ENCYCLOPEDIA</h2>
+      
+      <p>The cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.Domestic cats are valued by humans for companionship and their ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.</p>
+
+		<?php include 'DBSelect.php';?>
+
+<h1 align= "center" style="background-color:rgba(36, 36, 36, 0.5);"><span class="mw-headline" id="Breeds">Breeds</span><span class="mw-editsection"><span class="mw-editsection-bracket"></span><a href="/w/index.php?title=List_of_cat_breeds&amp;action=edit&amp;section=1" title="Edit section: Breeds"></a><span class="mw-editsection-bracket"></span></span></h1>
+<table class="wikitable sortable">
+<tbody align = "left"><tr>
+<th style="background-color:rgba(36, 36, 36, 0.3);">Breed
+</th>
+<th style="background-color:rgba(36, 36, 36, 0.3);">Location of origin
+</th>
+<th style="background-color:rgba(36, 36, 36, 0.3);">Type
+</th>
+<th style="background-color:rgba(36, 36, 36, 0.3);">Pattern
+</th>
+<!--<th class="unsortable">Image
+</th>--></tr>
+<tr>
+<th scope="row"><a title="Abyssinian cat">Abyssinian</a>
+</th>
+<td>Asia</sup></td>
+<td>Natural</td>
+<td>Ticked tabby</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Gustav_chocolate.jpg" class="image"><img alt="Abyssinian" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/100px-Gustav_chocolate.jpg" decoding="async" width="100" height="143" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/150px-Gustav_chocolate.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/200px-Gustav_chocolate.jpg 2x" data-file-width="1000" data-file-height="1427" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Aegean cat">Aegean</a>
+</th>
+<td>Greece</td>
+<td>Natural</td>
+<td>Multi-color</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Aegean_cat.jpg" class="image"><img alt="Aegean" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/100px-Aegean_cat.jpg" decoding="async" width="100" height="154" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/150px-Aegean_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/200px-Aegean_cat.jpg 2x" data-file-width="772" data-file-height="1186" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="American Bobtail">American Bobtail</a></a>
+</th>
+<td>the United States</td>
+<td>Short/long</td>
+<td>All</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:American_bobtail_2.jpg" class="image"><img alt="American Bobtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/100px-American_bobtail_2.jpg" decoding="async" width="100" height="125" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/150px-American_bobtail_2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/200px-American_bobtail_2.jpg 2x" data-file-width="988" data-file-height="1237" /></a>--></div></div>
+</td></tr>
+<th scope="row"><a title="Arabian Mau">Arabian Mau</a>
+</th>
+<td>the Arabian Peninsula</td>
+<td>Natural</td>
+<td>All
+</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:3yoArabianMau.jpeg" class="image"><img alt="Arabian Mau" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/53/3yoArabianMau.jpeg/100px-3yoArabianMau.jpeg" decoding="async" width="100" height="75" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/53/3yoArabianMau.jpeg/150px-3yoArabianMau.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/53/3yoArabianMau.jpeg/200px-3yoArabianMau.jpeg 2x" data-file-width="3264" data-file-height="2448" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Asian cat">Asian cat</a>
+</th>
+<td>Developed in the United Kingdom;<br />foundation stock from Asia</td>
+<td>Natural
+</td>
+<td>Evenly solid</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:BrownVarientAsianCat.JPG" class="image"><img alt="Asian" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/100px-BrownVarientAsianCat.JPG" decoding="async" width="100" height="133" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/150px-BrownVarientAsianCat.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/200px-BrownVarientAsianCat.JPG 2x" data-file-width="480" data-file-height="640" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Asian Semi-longhair">Asian Semi-longhair</a>
+</th>
+<td>the United Kingdom</td>
+<td>Crossbreed between the <a title="Burmese cat">Burmese</a> and <a title="Domestic long-haired cat">long-haired cats</a></td>
+<td>Evenly solid</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Tiffanie_at_cat_show.jpg" class="image"><img alt="Asian Semi-longhair" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/100px-Tiffanie_at_cat_show.jpg" decoding="async" width="100" height="121" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/150px-Tiffanie_at_cat_show.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/200px-Tiffanie_at_cat_show.jpg 2x" data-file-width="775" data-file-height="935" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Australian Mist">Australian Mist</a>
+</th>
+<td>Australia</td>
+<td>Crossbreed between the <a title="Abyssinian cat">Abyssinian</a> and <a title="Burmese cat">Burmese</a></td>
+<td>Spotted or marbled</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Australian_Mist.jpg" class="image"><img alt="Australian Mist" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/100px-Australian_Mist.jpg" decoding="async" width="100" height="102" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/150px-Australian_Mist.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/200px-Australian_Mist.jpg 2x" data-file-width="870" data-file-height="885" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Birman">Birman</a>
+</th>
+<td>Developed in France;<br />foundation stock from Burma (Myanmar)</td>
+<td>The original Birman was crossed with the <a  title="Siamese cat">Siamese</a> and the <a title="Persian cat">Persian</a> to create the Birman of today.</td>
+<td>Mitted colorpoint</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Birman2.jpg" class="image"><img alt="Birman" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/100px-Birman2.jpg" decoding="async" width="100" height="75" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/150px-Birman2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/200px-Birman2.jpg 2x" data-file-width="604" data-file-height="453" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="California Spangled">California Spangled</a>
+</th>
+<td>the United States</td>
+<td>Crossbreed between the <a  title="Abyssinian cat">Abyssinian</a>, <a  title="American Shorthair">American Shorthair</a> and <a title="British Shorthair">British Shorthair</a></td>
+<td>Spotted tabby</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Star_Spangled_Cat.jpg" class="image"><img alt="California Spangled" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/100px-Star_Spangled_Cat.jpg" decoding="async" width="100" height="68" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/150px-Star_Spangled_Cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/200px-Star_Spangled_Cat.jpg 2x" data-file-width="450" data-file-height="306" /></a>--></div></div>
+</td></tr>
+<tr>
+<th scope="row"><a title="Foldex cat">Foldex</a><b></b>
+</th>
+<td>Canada</td>
+<td>Crossbreed between the <a title="Exotic Shorthair">Exotic Shorthair</a> and <a title="Scottish Fold">Scottish Fold</a></td>
+<td>All</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Cachorro_de_Gato_FoldEx_(%22Belisario_del_Laberinto%22).JPG" class="image"><img alt="Foldex" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/100px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG" decoding="async" width="100" height="107" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/150px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/200px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG 2x" data-file-width="2084" data-file-height="2232" /></a>--></div></div></td></tr>
+<tr>
+<th scope="row"><a title="Minuet cat">Napoleon</a>
+</th>
+<td>the United States</td>
+<td>Crossbreed between the <a title="Persian cat">Persian</a> and <a title="Munchkin cat">Munchkin</a>
+</td>
+<td>All</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Munchkin_cat_2.jpg" class="image"><img alt="Napoleon" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Munchkin_cat_2.jpg/100px-Munchkin_cat_2.jpg" decoding="async" width="100" height="67" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Munchkin_cat_2.jpg/150px-Munchkin_cat_2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Munchkin_cat_2.jpg/200px-Munchkin_cat_2.jpg 2x" data-file-width="5472" data-file-height="3648" /></a>--></div></div></td></tr>
+<tr>
+<th scope="row"><a title="Savannah cat">Savannah</a>
+</th>
+<td>the United States</td>
+<td>Hybrid of the <a title="Cat">domestic cat</a> ×&#160;<a title="Serval">serval</a> (<i>Leptailurus serval</i>)<sup id="cite_ref-17" class="reference"></td>
+<td>Spotted</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Savannah_Cat_portrait.jpg" class="image"><img alt="Savannah" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/100px-Savannah_Cat_portrait.jpg" decoding="async" width="100" height="150" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/150px-Savannah_Cat_portrait.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/200px-Savannah_Cat_portrait.jpg 2x" data-file-width="1440" data-file-height="2160" /></a>--></div></div></td></tr>
+<tr>
+<th scope="row"><a title="Singapura cat">Singapura</a>
+</th>
+<td>Developed in the United States;<br />foundation stock from Singapore</td>
+<td>Crossbreed between the <a  title="Burmese cat">Burmese</a>, <a title="Abyssinian cat">Abyssinian</a>, and a variety of the <a title="Australian Mist">Australian Mist</a></td>
+<td>Ticked tabby</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Raffles_singapura_cat.jpg" class="image"><img alt="Singapura" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Raffles_singapura_cat.jpg/100px-Raffles_singapura_cat.jpg" decoding="async" width="100" height="133" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Raffles_singapura_cat.jpg/150px-Raffles_singapura_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/da/Raffles_singapura_cat.jpg/200px-Raffles_singapura_cat.jpg 2x" data-file-width="1536" data-file-height="2048" /></a>--></div></div></td></tr>
+<tr>
+<th scope="row"><a title="Sphynx cat">Sphynx</a>
+</th>
+<td>Canada, Europe</td>
+<td>Mutation</td>
+<td>All</td>
+<td><div class="center"><div class="floatnone"><!--<a href="/wiki/File:Sphinx2_July_2006.jpg" class="image"><img alt="Sphynx" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sphinx2_July_2006.jpg/100px-Sphinx2_July_2006.jpg" decoding="async" width="100" height="133" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sphinx2_July_2006.jpg/150px-Sphinx2_July_2006.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sphinx2_July_2006.jpg/200px-Sphinx2_July_2006.jpg 2x" data-file-width="1704" data-file-height="2272" /></a>--></div></div></td></tr>
+</tbody></table>
+</div>
+</div>
+
+<div class="row">
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="color:SlateBlue;" align="center">FRISKIES!</h2>
+	  <img src="frisk4_.jpg" alt= "Adds" style="margin:auto; width:200px;height:500px;display:block" >
+      
+	  <p style="color:SlateBlue;" align="center" > <b> Nutritious and YUMMY!! ^.^</b></p>
+	  
+    </div>    
+  </div>
+</div>
+</div>
+
+
+    <div class="row">	  
+	<div class="card">
+    <div class="cat breed web">
+	<h2 align="center"> <a href= https://www.cat-breeds-encyclopedia.com/ target="_blank">CAT &nbsp BREEDS &nbsp ENCYCLOPEDIA</a></h2>
+	<p align="center"> Search the Cat Breeds Encyclopedia to discover facts, photos, videos and information about all the different kinds of cats and all the cat varieties in the world today</p>
+	</div> 
+	</div>
+	</div>
+  
+	
+
+<div class="footer">
+	<a href="file:///D:/XAMPP/htdocs/Project%20230/ContactUs.html" target="_blank" style="bold" >Contact Us</a>
+  
+  <p> site design / logo © 2020 Cat Empire inc </p>
+</div>
+
+</body>
+</html>
